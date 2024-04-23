@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Product Image</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .custom-file-upload {
+    border: 2px solid #ccc;
+    margin: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: bisque;
+    
+}
+
+.custom-file-upload:hover {
+    background-color: #71db83;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+     /* Allow elements to wrap to the next line if needed */
+}
+button{
+            text-align: center;
+            align-items: center;
+        }
+        .button-container {
+    text-align: center;
+    border-top: 20px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #43cff1;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+}
+
+.button a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover a {
+  padding-right: 25px;
+}
+
+.button:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+    </style>
+
+</head>
+<body>
+    <h1 style="color: rgb(26, 211, 211);">Upload Background Image</h1>
+    <div class="container">
+    <form class="form" action="/background" method="post" enctype="multipart/form-data">
+        <input class='custom-file-upload' type="file" name="file1">
+        <input class='custom-file-upload' type="file" name="file2">
+        <input class='custom-file-upload' type="file" name="file3">
+        <input class='custom-file-upload' type="file" name="file4">
+        <input class='custom-file-upload' type="file" name="file5">
+        <input style="padding: 10px; color: rgb(19, 138, 138);" type="submit" value="Upload and Back to Home">
+    </form>
+    </div>
+    <div class="button-container">
+      <button class="button"><a href="/">Back to Home</a></button>
+  </div>
+</body>
+</html>
