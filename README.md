@@ -19,7 +19,7 @@ You should  generate 5 output images for each product image with a different bac
 # Output Images for one product with five different background and store remove background from product image
 
 ## Remove background from product image
-![alt text](output_advertisement/product1/no_bg_product1.jpg) 
+![alt text](output_advertisement/product1/no_bg_product1.png) 
 
 ## Output Images for one product with five different background
 
